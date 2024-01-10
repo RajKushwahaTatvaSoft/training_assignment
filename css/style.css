@@ -1,0 +1,65 @@
+﻿#left-side {
+    /* height: 100%; */
+}
+
+#right-side {
+    /* height: 100%; */
+}
+
+#grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    height: 100%;
+    margin-top: 160px;
+    align-items: center;
+    justify-content: center;
+    column-gap: 100px;
+}
+
+#hero-image {
+    border-radius: 50%;
+    box-shadow: 0px 4px 31px #0000000A;
+    border: 20px solid #FFFFFF;
+}
+
+.input {
+    padding: 10px 200px 10px 10px;
+    background: white;
+    border: 1px solid #ADADAD;
+    border-radius: 5px;
+}
+
+#highlight_text {
+    color: #C8242F;
+    font-weight: 900;
+    font: normal normal 300 40px/47px;
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #3E3E3E;
+}
+
+#login_btn {
+    background-color: #C8242F;
+    border: 0px;
+    color: white;
+    width: 138px;
+    height: 45px;
+    border-radius: 23px;
+    margin-right: 120px;
+}
+
+#forgot_btn {
+    border: 0px;
+    background-color: transparent;
+    font: normal normal normal 15px/20px;
+    color: #ADADAD
+}
+
+#register_btn {
+    border: 0px;
+    color: #C8242F;
+    background-color: transparent;
+    font-weight: 500;
+}
