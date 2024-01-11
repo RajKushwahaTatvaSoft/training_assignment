@@ -1,11 +1,363 @@
 ﻿<!DOCTYPE html>
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
+
     <meta charset="utf-8" />
-    <title></title>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="js/bootstrap.bundle.min.js">
+    <link rel="stylesheet" href="js/custom.js">
+
 </head>
+
 <body>
 
+    <div class="row">
+
+        <div class="col">
+
+            <div class="row">
+
+                <nav class="navbar col bg-white">
+
+                    <div class="navbar-header d-flex">
+                        <img class="" style="margin-left:29px" src="images/menu-bar.svg" alt="menu bar">
+
+                        <a class="navbar-brand" style="margin-left: 25px;" href="#"><img src="images/logo.svg"
+                                alt="company logo" height="30px"></a>
+
+                        <form class="navbar-form" action="">
+
+                            <div class="input-group">
+
+                                <div class="input-group-btn border-0">
+
+                                    <button class="btn btn-default border-0" type="submit">
+                                        <img src="images/search-icon.svg" alt="search-icon" height="30px">
+                                    </button>
+
+                                </div>
+                                <input type="text" class="form-control border-0" placeholder="Search">
+                            </div>
+                        </form>
+
+                    </div>
+
+                    <div class="d-flex align-items-center">
+
+                        <div><img src="images/notification-icon.svg" alt="notification-icon"></div>
+
+                        <div><img src="images/profile.png" alt="profile photo" style="margin-left: 52px;"><span
+                                style="margin-left: 12px;">John Doe</span></div>
+
+                        <div><img src="images/downward-arrow.svg" alt="drop down icon"
+                                style="margin-right: 43px; margin-left: 14px;padding-bottom: 5px;"></div>
+
+                    </div>
+
+                </nav>
+
+            </div>
+
+            <div class="row d-flex">
+
+                <nav class="col-md-2 sidebar d-inline">
+
+                    <div class="mt-4 list-group">
+
+                        <div class="list-item active d-inline">
+                            <img src="images/dashboard-active.svg" alt="dashboard_icon" height="30px">
+                            <a href="dashboard.html">Dashboard</a>
+                        </div>
+
+                        <div class="list-item d-inline">
+                            <img src="images/graph-default.svg" alt="graph_icon" height="30px">
+                            <a href="innerpage.html">Analysis</a>
+                        </div>
+
+                        <div class="list-item d-inline">
+                            <img src="images/inbox-default.svg" alt="graph_icon" height="30px">
+                            <a href="#inbox">Inbox</a>
+                        </div>
+
+                        <div class="list-item d-inline">
+                            <img src="images/clock-default.svg" alt="graph_icon" height="30px">
+                            <a href="#history">History</a>
+                        </div>
+
+                        <div class="list-item d-inline">
+                            <img src="images/user-default.svg" alt="graph_icon" height="30px">
+                            <a href="#users">Users</a>
+                        </div>
+
+                        <div class="list-item d-inline">
+                            <img src="images/maintenance-default.svg" alt="graph_icon" height="30px">
+                            <a href="#maintenance">Maintenance</a>
+                        </div>
+
+                        <div class="list-item d-inline">
+                            <img src="images/setting-default.svg" alt="graph_icon" height="30px">
+                            <a href="#settings">Settings</a>
+                        </div>
+
+                        <!-- <a href="#analysis"><img src="images/graph-default.svg" alt="dashboard_icon" height="30px">Analysis</a> -->
+
+
+                    </div>
+
+
+                </nav>
+
+                <div class="col-md-10" style="background-color: #FAFAFA;">
+                    <div style="margin-top: 40px; margin-left: 50px;">
+                        <h3>Dashboard</h3>
+                    </div>
+
+                    <div class="d-flex" style="margin-left: 120px;margin-top: 30px;">
+
+                        <div class="d-flex product align-items-center" style="margin-right: 120px; ">
+                            <img src="images/star.svg" alt="star_image" height="50px">
+                            <div class="ms-2">
+                                <span class="product_heading">23,456</span>
+                                <br>
+                                <span>New Products</span>
+                            </div>
+                        </div>
+
+                        <div class="d-flex product align-items-center" style="margin-right: 120px; ">
+                            <img src="images/new-product.svg" alt="star_image" height="50px">
+                            <div class="ms-2">
+                                <span class="product_heading">2345</span>
+                                <br>
+                                <span>Added Products</span>
+                            </div>
+                        </div>
+
+                        <div class="d-flex product align-items-center" style="margin-right: 120px; ">
+                            <img src="images/total-product.svg" alt="star_image" height="50px">
+                            <div class="ms-2">
+                                <span class="product_heading">1652</span>
+                                <br>
+                                <span>Total Products</span>
+                            </div>
+                        </div>
+
+                        <div class="d-flex product align-items-center" style="margin-right: 120px; ">
+                            <img src="images/dollar-filled.svg" alt="star_image" height="50px">
+                            <div class="ms-2">
+                                <span class="product_heading">6543</span>
+                                <br>
+                                <span>Today's Sale</span>
+                            </div>
+                        </div>
+
+                        <div class="d-flex product align-items-center" style="margin-right: 120px; ">
+                            <img src="images/money-bag.svg" alt="star_image" height="50px">
+                            <div class="ms-2">
+                                <span class="product_heading">5462</span>
+                                <br>
+                                <span>Total Sale</span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="d-flex" style="margin-left: 150px; margin-top: 70px;">
+
+                        <div>
+                            <div class="d-flex align-items-center justify-content-between">
+                                <span class="" style="font-size: 22px;">Sale</span>
+
+                                <div>
+                                    <span style="font-size: 12px; color: #ADADAD; margin-right: 10px;">Weekly</span>
+                                    <span style="font-size: 12px; color: #ADADAD; margin-right: 10px;">Monthly</span>
+                                    <span
+                                        style="font-size: 12px; color: #C8242F; text-decoration : underline;">Yearly</span>
+                                </div>
+                            </div>
+                            <img class="mt-4" src="images/data-graph.png" alt="">
+                        </div>
+
+                        <div class="ms-5 justify-content-center">
+                            <span class="fs-4" style="font-weight: 600;">Sales by Country</span>
+                            <br>
+                            <img src="images/pie-chart.svg" alt="pie-chart">
+
+                            <div class="d-flex">
+                                <div>
+                                    <div class="d-flex">
+                                        <svg width="25px" height="25px" viewBox="0 0 15 15" version="1.1"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve"
+                                            xmlns:serif="http://www.serif.com/"
+                                            style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
+                                            <g transform="matrix(1,0,0,1,3.5,3.5)">
+                                                <path
+                                                    d="M4,0.75C2.237,0.75 0.75,2.237 0.75,4C0.75,5.763 2.237,7.25 4,7.25C5.763,7.25 7.25,5.763 7.25,4C7.25,2.237 5.763,0.75 4,0.75Z"
+                                                    style="fill:rgb(200,36,47);fill-rule:nonzero;" />
+                                            </g>
+                                        </svg>
+                                        <span style="font-size: 15px;">United States Of America</span>
+                                    </div>
+
+                                    <div class="d-flex">
+                                        <svg width="25px" height="25px" viewBox="0 0 15 15" version="1.1"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve"
+                                            xmlns:serif="http://www.serif.com/"
+                                            style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
+                                            <g transform="matrix(1,0,0,1,3.5,3.5)">
+                                                <path
+                                                    d="M4,0.75C2.237,0.75 0.75,2.237 0.75,4C0.75,5.763 2.237,7.25 4,7.25C5.763,7.25 7.25,5.763 7.25,4C7.25,2.237 5.763,0.75 4,0.75Z"
+                                                    style="fill:rgb(241,108,32);fill-rule:nonzero;" />
+                                            </g>
+                                        </svg>
+                                        <span style="font-size: 15px;">Russia</span>
+                                    </div>
+
+                                </div>
+
+                                <div class="ms-4">
+                                    <div class="d-flex">
+                                        <svg width="25px" height="25px" viewBox="0 0 15 15" version="1.1"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve"
+                                            xmlns:serif="http://www.serif.com/"
+                                            style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
+                                            <g transform="matrix(1,0,0,1,3.5,3.5)">
+                                                <path
+                                                    d="M4,0.75C2.237,0.75 0.75,2.237 0.75,4C0.75,5.763 2.237,7.25 4,7.25C5.763,7.25 7.25,5.763 7.25,4C7.25,2.237 5.763,0.75 4,0.75Z"
+                                                    style="fill:rgb(162,184,108);fill-rule:nonzero;" />
+                                            </g>
+                                        </svg>
+                                        <span style="font-size: 15px;">Canada</span>
+                                    </div>
+
+                                    <div class="d-flex">
+                                        <svg width="25px" height="25px" viewBox="0 0 15 15" version="1.1"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve"
+                                            xmlns:serif="http://www.serif.com/"
+                                            style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
+                                            <g transform="matrix(1,0,0,1,3.5,3.5)">
+                                                <path
+                                                    d="M4,0.75C2.237,0.75 0.75,2.237 0.75,4C0.75,5.763 2.237,7.25 4,7.25C5.763,7.25 7.25,5.763 7.25,4C7.25,2.237 5.763,0.75 4,0.75Z"
+                                                    style="fill:rgb(235,200,68);fill-rule:nonzero;" />
+                                            </g>
+                                        </svg>
+                                        <span style="font-size: 15px;">India</span>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div style="margin-left: 130px; margin-top: 70px;">
+
+                        <div class="d-flex">
+                            <span class="fw-bold fs-3 col-md-6" style="float: left;">Invoices</span>
+                            <a class="col-md-6 me-4"
+                                style="float: right;text-align: right; color: #C8242F; text-decoration: none;">View
+                                All</a>
+
+                        </div>
+
+                        <table class="table">
+                            <thead class="thead-dark">
+                                <tr>
+                                    <th scope="col">Invoice</th>
+                                    <th scope="col">Company Name</th>
+                                    <th scope="col">Email</th>
+                                    <th scope="col">Due Date</th>
+                                    <th scope="col">Status</th>
+                                    <th scope="col">Amount</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>564654</td>
+                                    <td>Public Adjusting Firm</td>
+                                    <td>georgia.young@example.com</td>
+                                    <td>24 May, 2020</td>
+                                    <td class="paid">Paid</td>
+                                    <td>$47,00</td>
+                                </tr>
+                                <tr>
+                                    <td>564654</td>
+                                    <td>Public Adjusting Firm</td>
+                                    <td>georgia.young@example.com</td>
+                                    <td>24 May, 2020</td>
+                                    <td class="paid">Paid</td>
+                                    <td>$47,800</td>
+                                </tr>
+                                <tr>
+                                    <td>564654</td>
+                                    <td>Public Adjusting Firm</td>
+                                    <td>georgia.young@example.com</td>
+                                    <td>24 May, 2020</td>
+                                    <td class="paid">Paid</td>
+                                    <td>$47,800</td>
+                                </tr>
+                                <tr>
+                                    <td>564654</td>
+                                    <td>Public Adjusting Firm</td>
+                                    <td>georgia.young@example.com</td>
+                                    <td>24 May, 2020</td>
+                                    <td class="paid">Paid</td>
+                                    <td>$47,800</td>
+                                </tr>
+                                <tr>
+                                    <td>564654</td>
+                                    <td>Public Adjusting Firm</td>
+                                    <td>georgia.young@example.com</td>
+                                    <td>24 May, 2020</td>
+                                    <td class="paid">Paid</td>
+                                    <td>$47,800</td>
+                                </tr>
+                                <tr>
+                                    <td>564654</td>
+                                    <td>Public Adjusting Firm</td>
+                                    <td>georgia.young@example.com</td>
+                                    <td>24 May, 2020</td>
+                                    <td class="paid">Paid</td>
+                                    <td>$47,800</td>
+                                </tr>
+                                <tr>
+                                    <td>564654</td>
+                                    <td>Public Adjusting Firm</td>
+                                    <td>georgia.young@example.com</td>
+                                    <td>24 May, 2020</td>
+                                    <td class="paid">Paid</td>
+                                    <td>$47,800</td>
+                                </tr>
+                                <tr>
+                                    <td>564654</td>
+                                    <td>Public Adjusting Firm</td>
+                                    <td>georgia.young@example.com</td>
+                                    <td>24 May, 2020</td>
+                                    <td class="paid">Paid</td>
+                                    <td>$47,800</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
 </body>
+
 </html>

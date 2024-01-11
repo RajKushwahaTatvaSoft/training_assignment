@@ -1,19 +1,22 @@
-﻿#left-side {
-    /* height: 100%; */
+﻿@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+:root{
+    --primary: #C8242F;
 }
-
-#right-side {
-    /* height: 100%; */
-}
-
 #grid-container {
     display: grid;
     grid-template-columns: auto auto;
     height: 100%;
-    margin-top: 160px;
     align-items: center;
     justify-content: center;
     column-gap: 100px;
+}
+
+.custom_navbar{
+    height: 80px;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 #hero-image {

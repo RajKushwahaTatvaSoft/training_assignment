@@ -1,11 +1,246 @@
 ﻿<!DOCTYPE html>
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
+
     <meta charset="utf-8" />
-    <title></title>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="js/bootstrap.bundle.min.js">
+    <link rel="stylesheet" href="js/custom.js">
+
 </head>
+
 <body>
 
+    <div class="row">
+
+        <div class="col">
+
+            <div class="row">
+
+                <nav class="navbar col bg-white">
+
+                    <div class="navbar-header d-flex">
+                        <img class="" style="margin-left:29px" src="images/menu-bar.svg" alt="menu bar">
+
+                        <a class="navbar-brand" style="margin-left: 25px;" href="#"><img src="images/logo.svg"
+                                alt="company logo" height="30px"></a>
+
+                        <form class="navbar-form" action="">
+
+                            <div class="input-group">
+
+                                <div class="input-group-btn border-0">
+
+                                    <button class="btn btn-default border-0" type="submit">
+                                        <img src="images/search-icon.svg" alt="search-icon" height="30px">
+                                    </button>
+
+                                </div>
+                                <input type="text" class="form-control border-0" placeholder="Search">
+                            </div>
+                        </form>
+
+                    </div>
+
+                    <div class="d-flex align-items-center">
+
+                        <div><img src="images/notification-icon.svg" alt="notification-icon"></div>
+
+                        <div><img src="images/profile.png" alt="profile photo" style="margin-left: 52px;"><span
+                                style="margin-left: 12px;">John Doe</span></div>
+
+                        <div><img src="images/downward-arrow.svg" alt="drop down icon"
+                                style="margin-right: 43px; margin-left: 14px;padding-bottom: 5px;"></div>
+
+                    </div>
+
+                </nav>
+
+            </div>
+
+            <div class="row d-flex">
+
+                <nav class="col-md-2 sidebar d-inline">
+
+                    <div class="mt-4 list-group">
+
+                        <div class="list-item d-inline">
+                            <img src="images/dashboard-default.svg" alt="dashboard_icon" height="30px">
+                            <a href="dashboard.html">Dashboard</a>
+                        </div>
+
+                        <div class="list-item active d-inline">
+                            <img src="images/graph-active.svg" alt="graph_icon" height="30px">
+                            <a href="#analysis">Analysis</a>
+                        </div>
+
+                        <div class="list-item d-inline">
+                            <img src="images/inbox-default.svg" alt="graph_icon" height="30px">
+                            <a href="#inbox">Inbox</a>
+                        </div>
+
+                        <div class="list-item d-inline">
+                            <img src="images/clock-default.svg" alt="graph_icon" height="30px">
+                            <a href="#history">History</a>
+                        </div>
+
+                        <div class="list-item d-inline">
+                            <img src="images/user-default.svg" alt="graph_icon" height="30px">
+                            <a href="#users">Users</a>
+                        </div>
+
+                        <div class="list-item d-inline">
+                            <img src="images/maintenance-default.svg" alt="graph_icon" height="30px">
+                            <a href="#maintenance">Maintenance</a>
+                        </div>
+
+                        <div class="list-item d-inline">
+                            <img src="images/setting-default.svg" alt="graph_icon" height="30px">
+                            <a href="#settings">Settings</a>
+                        </div>
+
+                        <!-- <a href="#analysis"><img src="images/graph-default.svg" alt="dashboard_icon" height="30px">Analysis</a> -->
+
+
+                    </div>
+
+
+                </nav>
+
+                <div class="col-md-10" style="background-color: #FAFAFA;">
+                    <div class="row mt-4">
+                        <h3 class="ms-4">Analysis</h3>
+                    </div>
+
+                    <div class="row mt-4">
+                        <div class="col-1"></div>
+                        <div class="col me-5">
+                            <form>
+                                <div>
+
+                                    <span class="fw-bold" style="color: #3E3E3E; font-size: 22px;">One Column</span>
+                                    <div class="form-group mt-1">
+                                        <input type="email" class="form-control" id="exampleInputEmail1"
+                                            aria-describedby="emailHelp" placeholder="Name">
+                                    </div>
+                                    <div class="form-group mt-3">
+                                        <input type="password" class="form-control" id="exampleInputPassword1"
+                                            placeholder="Password">
+                                    </div>
+                                    <div class="form-group mt-3">
+                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                                            placeholder="Multiple Line"></textarea>
+                                    </div>
+
+                                </div>
+
+                                <div class="mt-4">
+
+                                    <span class="fw-bold" style="color: #3E3E3E; font-size: 22px;">Two Column</span>
+
+                                    <div class="row align-items-center mt-1">
+
+                                        <div class="form-group col">
+                                            <input type="email" class="form-control" placeholder="Name">
+                                        </div>
+                                        <div class="form-group col">
+                                            <input type="password" class="form-control" id="exampleInputPassword1"
+                                                placeholder="Username">
+                                        </div>
+
+                                    </div>
+
+                                    <div class="row align-items-center">
+
+                                        <div class="form-group col">
+                                            <input type="email" class="form-control" placeholder="Password">
+                                        </div>
+                                        <div class="form-group col">
+                                            <label for="inputState"></label>
+                                            <select id="inputState" class="form-control">
+                                                <option selected>Choose...</option>
+                                                <option>...</option>
+                                            </select>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="mt-4">
+
+                                    <span class="fw-bold" style="color: #3E3E3E; font-size: 22px;">Three Column</span>
+
+                                    <div class="row align-items-center mt-1">
+
+                                        <div class="form-group col">
+                                            <input type="email" class="form-control" placeholder="Name">
+                                        </div>
+                                        <div class="form-group col">
+                                            <input type="password" class="form-control" id="exampleInputPassword1"
+                                                placeholder="Username">
+                                        </div>
+
+                                        <div class="form-group col">
+                                            <input type="password" class="form-control" id="exampleInputPassword1"
+                                                placeholder="Username">
+                                        </div>
+
+                                    </div>
+
+
+                                </div>
+
+                                <div class="mt-4">
+
+                                    <span class="fw-bold" style="color: #3E3E3E; font-size: 22px;">Four Column</span>
+
+                                    <div class="row align-items-center mt-1">
+
+                                        <div class="form-group col">
+                                            <input type="email" class="form-control" placeholder="Name">
+                                        </div>
+                                        <div class="form-group col">
+                                            <input type="password" class="form-control" id="exampleInputPassword1"
+                                                placeholder="Username">
+                                        </div>
+
+                                        <div class="form-group col">
+                                            <input type="password" class="form-control" id="exampleInputPassword1"
+                                                placeholder="Username">
+                                        </div>
+
+                                        <div class="form-group col">
+                                            <input type="password" class="form-control" id="exampleInputPassword1"
+                                                placeholder="Username">
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="mt-4">
+
+                                    <span class="fw-bold" style="color: #3E3E3E; font-size: 22px;">Other Design Elements</span>
+
+                                    <span class="row mt-3">File Upload</span>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
 </body>
+
 </html>

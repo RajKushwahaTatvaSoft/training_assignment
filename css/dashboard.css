@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+.sidebar .list-item{
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.sidebar .list-item a{
+    color: #3E3E3E;
+    text-decoration: none;
+}
+
+.sidebar .list-item:hover{
+    border-radius: 5px;
+    background-color: #E9E9E9;
+    padding: 10px;
+}
+
+.sidebar .active{
+    border-radius: 5px;
+    background-color: #FFF3F4;
+    color: #C8242F;
+    padding: 10px;
+}
+
+.sidebar .active a {
+    color: #C8242F;
+    text-decoration: none;
+}
+
+.sidebar .list-group{
+    margin-left: 30px;
+    margin-bottom: 10px;
+}
+
+.product_heading{
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.paid{
+    padding: 3px;
+    background-color: red;
+    color: #3CDD5F;
+}
+
+th {
+    color: #ADADAD;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: lighter;
+    font-family: 'Roboto', sans-serif;
+} 
