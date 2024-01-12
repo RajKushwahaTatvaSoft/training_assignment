@@ -51,3 +51,9 @@ th {
     font-weight: lighter;
     font-family: 'Roboto', sans-serif;
 } 
+/*
+input[type=text]:focus {
+    outline: auto #C8242F;
+    
+    /* box-shadow: 0 #C8242F; */
+    /* outline-color: #C8242F; */

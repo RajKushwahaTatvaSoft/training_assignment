@@ -21,13 +21,18 @@
 
             <div class="row">
 
-                <nav class="navbar col bg-white">
+                <nav class="navbar bg-white">
 
-                    <div class="navbar-header d-flex">
-                        <img class="" style="margin-left:29px" src="images/menu-bar.svg" alt="menu bar">
+                    <div class="col-md-2 navbar-header d-flex justify-content-between align-items-center ms-4">
 
-                        <a class="navbar-brand" style="margin-left: 25px;" href="#"><img src="images/logo.svg"
-                                alt="company logo" height="30px"></a>
+                        <img class="image-fluid" src="images/menu-bar.svg" alt="menu bar">
+
+                        <a class="navbar-brand image-fluid" href="#"><img src="images/logo.svg" alt="company logo" height="30px"></a>
+
+                    </div>
+
+
+                    <div class="col d-flex justify-content-between">
 
                         <form class="navbar-form" action="">
 
@@ -40,23 +45,29 @@
                                     </button>
 
                                 </div>
+
                                 <input type="text" class="form-control border-0" placeholder="Search">
                             </div>
+
                         </form>
 
+
+
+                        <div class="d-flex align-items-center justify-content-end">
+
+                            <div><img src="images/notification-icon.svg" alt="notification-icon"></div>
+
+                            <div><img src="images/profile.png" alt="profile photo" style="margin-left: 52px;"><span
+                                    style="margin-left: 12px;">John Doe</span></div>
+
+                            <div><img src="images/downward-arrow.svg" alt="drop down icon"
+                                    style="margin-right: 43px; margin-left: 14px;padding-bottom: 5px;"></div>
+
+                        </div>
+
+
                     </div>
 
-                    <div class="d-flex align-items-center">
-
-                        <div><img src="images/notification-icon.svg" alt="notification-icon"></div>
-
-                        <div><img src="images/profile.png" alt="profile photo" style="margin-left: 52px;"><span
-                                style="margin-left: 12px;">John Doe</span></div>
-
-                        <div><img src="images/downward-arrow.svg" alt="drop down icon"
-                                style="margin-right: 43px; margin-left: 14px;padding-bottom: 5px;"></div>
-
-                    </div>
 
                 </nav>
 
@@ -64,7 +75,7 @@
 
             <div class="row d-flex">
 
-                <nav class="col-md-2 sidebar d-inline">
+                <nav class="col-md-2 sidebar">
 
                     <div class="mt-4 list-group">
 
@@ -116,7 +127,7 @@
                         <h3>Dashboard</h3>
                     </div>
 
-                    <div class="d-flex" style="margin-left: 120px;margin-top: 30px;">
+                    <div class="d-flex" style="margin-left: 100px;margin-top: 30px;">
 
                         <div class="d-flex product align-items-center" style="margin-right: 120px; ">
                             <img src="images/star.svg" alt="star_image" height="50px">
@@ -165,7 +176,7 @@
 
                     </div>
 
-                    <div class="d-flex" style="margin-left: 150px; margin-top: 70px;">
+                    <div class="d-flex " style="margin-left: 120px; margin-top: 70px;">
 
                         <div>
                             <div class="d-flex align-items-center justify-content-between">
@@ -178,13 +189,13 @@
                                         style="font-size: 12px; color: #C8242F; text-decoration : underline;">Yearly</span>
                                 </div>
                             </div>
-                            <img class="mt-4" src="images/data-graph.png" alt="">
+                            <img class="mt-4 image-fluid h-auto" src="images/data-graph.png" alt="">
                         </div>
 
                         <div class="ms-5 justify-content-center">
                             <span class="fs-4" style="font-weight: 600;">Sales by Country</span>
                             <br>
-                            <img src="images/pie-chart.svg" alt="pie-chart">
+                            <img class="image-fluid h-auto" src="images/pie-chart.svg" alt="pie-chart">
 
                             <div class="d-flex">
                                 <div>
@@ -259,11 +270,11 @@
 
                     </div>
 
-                    <div style="margin-left: 130px; margin-top: 70px;">
+                    <div style="margin-left: 100px; margin-top: 70px;">
 
-                        <div class="d-flex">
-                            <span class="fw-bold fs-3 col-md-6" style="float: left;">Invoices</span>
-                            <a class="col-md-6 me-4"
+                        <div class="d-flex justify-content-between">
+                            <span class="fw-bold fs-3" style="float: left;">Invoices</span>
+                            <a class="me-4"
                                 style="float: right;text-align: right; color: #C8242F; text-decoration: none;">View
                                 All</a>
 

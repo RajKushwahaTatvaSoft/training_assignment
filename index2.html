@@ -1,6 +1,6 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml" style="height: 100%;">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" class="h-100">
 
 <head>
     <meta charset="utf-8" />
@@ -12,21 +12,23 @@
 
 </head>
 
-<body style="background: #FAFAFA 0% 0% no-repeat padding-box; height: 100%;">
+<body class="h-100 grid" style="background-color: #FAFAFA;">
 
-    <div id="grid-container">
+    <div class="row d-flex align-items-start justify-content-start align-items-md-center h-100">
 
-        <div id="left-side">
-            <img id="hero-image" src="images/hero-image.png" alt="Hero image" />
+        <div class="col-md justify-content-center d-flex">
+            <img class="image-fluid rounded-circle" style="height: auto;" id="hero-image" src="images/hero-image.png" alt="Hero image" />
         </div>
     
-        <div id="right-side">
-            <img src="images/logo.svg" alt="Company Logo" height="58px">
+        <div class="col-md justify-content-center d-flex">
+
             <div>
-                <p style="font-size: 40px;">We are <span id="highlight_text">experts</span> in
-                    business, <br> marketing, growth, & sales.</p>
+                <img class="image-fluid h-auto" src="images/logo.svg" alt="Company Logo">
+
+                <p style="font-size: 2vw;">We are <span id="highlight_text">experts</span> in
+                    business, marketing, growth, & sales.</p>
     
-                <p style="font-size: 25px;">Login to your account</p>
+                <p style="font-size: 1.4vw;">Login to your account</p>
         
                 <form action="get">
                     <input class="input" type="text" placeholder="Username">
@@ -42,9 +44,8 @@
                 </form>
             </div>
         </div>
-    
-    
     </div>
+    
 
 
 
