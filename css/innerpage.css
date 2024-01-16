@@ -33,6 +33,11 @@
     margin-bottom: 10px;
 }
 
+.product_heading{
+    font-weight: 700;
+    font-size: 25px;
+}
+
 .paid{
     padding: 3px;
     background-color: red;
@@ -52,3 +57,14 @@ input[type=text]:focus {
     
     /* box-shadow: 0 #C8242F; */
     /* outline-color: #C8242F; */
+
+#myTab .active{
+    color: red;
+    border-color: #C8242F;
+    border-width: 0px 0px 5px 0px;
+    
+}
+
+.rk{
+    color: black;
+}
