@@ -34,9 +34,21 @@
 }
 
 .paid{
-    padding: 3px;
-    background-color: red;
+    padding: 5px;
     color: #3CDD5F;
+    background-color: #EBFFEF;
+}
+
+.failed{
+    padding: 5px;
+    color: #FF4545;
+    background-color: #FFF5F5;
+}
+
+.pending{
+    padding: 5px;
+    color: #BABABA;
+    background-color: #F8F8F8;
 }
 
 th {
